@@ -11,12 +11,14 @@ int main(void)
 
 	pp = fork();
 
-	if (pp == -1)
+	if (pp == 0)
 	{
-		printf("failed");
+		printf("failed\n");
 		return -1;
 	}
-	printf("success");
+	printf("success\n");
+
+	printf("End..\n");
 
 	return 0;
 }
